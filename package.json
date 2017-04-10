@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-timestamps",
+  "version": "1.0.0",
+  "description": "freecodecamp project on nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashniu123/nodejs-timestamps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ashniu123/nodejs-timestamps/issues"
+  },
+  "homepage": "https://github.com/Ashniu123/nodejs-timestamps#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
