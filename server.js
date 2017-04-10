@@ -6,7 +6,7 @@ var port = process.env.PORT || 8080;
 
 app.get('/',function(req,res){
     res.status(200).end(`
-<div style="font-family: Arial,sans-serif;">
+<div style="font-family: Arial,sans-serif;margin: 20px;font-size: 110%;">
 <h1>API Basejump: Timestamp microservice</h1>
 <h2>User stories:</h2>
 <ol>
@@ -14,12 +14,13 @@ app.get('/',function(req,res){
 <li>If it does, it returns both the Unix timestamp and the natural language form of that date.
 <li>If it does not contain a date or Unix timestamp, it returns null for those properties.
 </ol>
-<p>Example usage:<ul style="none">
-<li><a href="https://ashniu123-timestamp.herokuapp.com/December%2015,%202015" target="_blank">https://ashniu123-timestamp.herokuapp.com/December%2015,%202015</a>
-<li><a href="https://ashniu123-timestamp.herokuapp.com/1450137600" target="_blank">https://ashniu123-timestamp.herokuapp.com/1450137600</a>
+<p>Example usage:<ul style="list-style: none;">
+<li style="margin-bottom: 10px;"><a href="https://ashniu123-timestamp.herokuapp.com/December%2015,%202015" target="_blank" style="background: #f9f2f4;color: #c7254e">https://ashniu123-timestamp.herokuapp.com/December%2015,%202015</a></li>
+<li><a href="https://ashniu123-timestamp.herokuapp.com/1450137600" target="_blank" style="background: #f9f2f4;color: #c7254e">https://ashniu123-timestamp.herokuapp.com/1450137600</a></li>
+</ul>
 </p>
 <p>Example output:<br>
-{ "unix": 1450137600, "natural": "December 15, 2015" }
+<span style="color: lightcoral;margin: 20px;">{ "unix": 1450137600, "natural": "December 15, 2015" }</span>
 </p>
 </div>
 `);
@@ -39,5 +40,5 @@ app.get('/:time', function (req, res) {
 });
 
 app.listen(port, function () {
-    console.log('Example app listening on port 3000!');
+    console.log('Example app listening on port '+port+"!");
 });
