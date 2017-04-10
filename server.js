@@ -2,6 +2,8 @@ var express = require('express');
 var moment=require('moment');
 var app = express();
 
+var port = process.env.PORT || 8080;
+
 app.get('/:time', function (req, res) {
     var time=req.params.time,json={};
     console.log(time);
@@ -18,6 +20,6 @@ app.get('/:time', function (req, res) {
     res.status(200).end(JSON.stringify(json));
 });
 
-app.listen(3000, function () {
+app.listen(port, function () {
     console.log('Example app listening on port 3000!');
 });
